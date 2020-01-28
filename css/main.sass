@@ -1,0 +1,38 @@
+body
+    font-family: 'Bad Script', cursive
+.slider
+    display: flex
+    justify-content: center
+    align-items: center
+.item
+    flex-basis: 25%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'Bad Script', cursive
+    transition: all 0.2s
+
+    &:hover
+        flex-basis: 50%
+        // transition: all 0.2s
+    span
+        font-size: 52px
+        font-weight: bold
+        color: white
+        text-shadow: 0px 0px 20px #000
+.item-1
+    background-image: url(../img/picture1.jpg)
+.item-2
+    background-image: url(../img/picture2.jpg)
+.item-3
+    background-image: url(../img/picture3.jpg)
+.item-4
+    background-image: url(../img/picture4.jpg)
+
+@media all and(max-width:600px)
+    .slider
+        flex-flow: column
+        height: 100vh
+    .item
+        width: 100%
